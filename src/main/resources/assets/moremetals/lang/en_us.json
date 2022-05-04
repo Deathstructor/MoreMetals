@@ -1,3 +1,6 @@
 {
-  "item.tutorial.cobalt_ingot": "Cobalt Ingot"
+  "item.moremetals.cobalt_ingot": "Cobalt Ingot",
+
+  "block.moremetals.cobalt_block": "Block of Cobalt",
+  "block.moremetals.cobalt_ore": "Cobalt Ore"
 }
