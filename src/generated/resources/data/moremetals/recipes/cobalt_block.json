@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "moremetals:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "moremetals:cobalt_block"
+  }
+}

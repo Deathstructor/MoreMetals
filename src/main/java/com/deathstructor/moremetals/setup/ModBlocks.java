@@ -16,6 +16,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(3, 10)
                     .harvestLevel(3)
+                    .setRequiresTool()
                     .sound(SoundType.STONE)
             ));
 
