@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "moremetals:cobalt_ore"
+    "#forge:ores/cobalt"
   ]
 }

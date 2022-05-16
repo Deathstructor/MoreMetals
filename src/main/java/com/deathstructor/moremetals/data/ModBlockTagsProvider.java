@@ -15,10 +15,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     }
 
     @Override
-    protected void registerTags() {
-        getOrCreateBuilder(ModTags.Blocks.ORES_COBALT).add(ModBlocks.COBALT_ORE.get());
-        getOrCreateBuilder(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_COBALT);
-        getOrCreateBuilder(ModTags.Blocks.STORAGE_BLOCKS_COBALT).add(ModBlocks.COBALT_BLOCK.get());
-        getOrCreateBuilder(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_COBALT);
+    protected void addTags() {
+        tag(ModTags.Blocks.ORES_COBALT).addTag(ModTags.Blocks.ORES_COBALT);
+        tag(Tags.Blocks.ORES).addTag(ModTags.Blocks.ORES_COBALT);
+        tag(ModTags.Blocks.STORAGE_BLOCKS_COBALT).addTag(ModTags.Blocks.STORAGE_BLOCKS_COBALT);
+        tag(Tags.Blocks.STORAGE_BLOCKS).addTag(ModTags.Blocks.STORAGE_BLOCKS_COBALT);
     }
 }

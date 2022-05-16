@@ -17,13 +17,13 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     }
 
     @Override
-    protected void registerTags() {
+    protected void addTags() {
         copy(ModTags.Blocks.ORES_COBALT, ModTags.Items.ORES_COBALT);
         copy(Tags.Blocks.ORES, Tags.Items.ORES);
         copy(ModTags.Blocks.STORAGE_BLOCKS_COBALT, ModTags.Items.STORAGE_BLOCKS_COBALT);
         copy(Tags.Blocks.STORAGE_BLOCKS, Tags.Items.STORAGE_BLOCKS);
 
-        getOrCreateBuilder(ModTags.Items.INGOTS_COBALT).add(ModItems.COBALT_INGOT.get());
-        getOrCreateBuilder(Tags.Items.INGOTS).addTag(ModTags.Items.INGOTS_COBALT);
+        tag(ModTags.Items.INGOTS_COBALT).add(ModItems.COBALT_INGOT.get());
+        tag(Tags.Items.INGOTS).addTag(ModTags.Items.INGOTS_COBALT);
     }
 }

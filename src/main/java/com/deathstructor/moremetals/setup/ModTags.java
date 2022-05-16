@@ -14,11 +14,11 @@ public class ModTags {
         public static final ITag.INamedTag<Block> STORAGE_BLOCKS_COBALT = forge("storage_blocks/cobalt");
 
         public static ITag.INamedTag<Block> forge(String path) {
-            return BlockTags.makeWrapperTag(new ResourceLocation("forge", path).toString());
+            return BlockTags.bind(new ResourceLocation("forge", path).toString());
         }
 
         public static ITag.INamedTag<Block> mod(String path) {
-            return BlockTags.makeWrapperTag(new ResourceLocation(MoreMetals.MOD_ID, path).toString());
+            return BlockTags.bind(new ResourceLocation(MoreMetals.MOD_ID, path).toString());
         }
     }
 
@@ -29,11 +29,11 @@ public class ModTags {
         public static final ITag.INamedTag<Item> INGOTS_COBALT= forge("ingots/cobalt");
 
         public static ITag.INamedTag<Item> forge(String path) {
-            return ItemTags.makeWrapperTag(new ResourceLocation("forge", path).toString());
+            return ItemTags.bind(new ResourceLocation("forge", path).toString());
         }
 
         public static ITag.INamedTag<Item> mod(String path) {
-            return ItemTags.makeWrapperTag(new ResourceLocation(MoreMetals.MOD_ID, path).toString());
+            return ItemTags.bind(new ResourceLocation(MoreMetals.MOD_ID, path).toString());
         }
     }
 }
